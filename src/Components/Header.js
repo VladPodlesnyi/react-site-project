@@ -8,7 +8,9 @@ import Contacts from '../Pages/Contacts'
 import Blog from '../Pages/Blog'
 import Login from '../Pages/Login'
 import Singup from '../Pages/Singup'
+import Main from '../Pages/Main'
 import User_information from '../Pages/User_information'
+
 export default class Header extends Component {
     render() {
         return (
@@ -48,6 +50,7 @@ export default class Header extends Component {
                             </Form>
                             <Button className='btn-dark' href='/sing-in'>Sing in</Button>
                             <Button className='btn-dark' href='/sing-up'>Sing up</Button>
+                            <Button className='btn-dark' href='/main'>Main</Button>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
@@ -63,6 +66,7 @@ export default class Header extends Component {
                         <Route path='/blog' element={<Blog />} />
                         <Route path='/sing-in' element={<Login />} />
                         <Route path='/user_information' element={<User_information />} />
+                        <Route path='/main' element={<Main />} />
                         <Route path='/sing-up' element={<Singup />} />
                     </Routes>
                 </Router>
