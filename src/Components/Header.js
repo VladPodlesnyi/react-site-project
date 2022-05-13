@@ -8,6 +8,7 @@ import Contacts from '../Pages/Contacts'
 import Blog from '../Pages/Blog'
 import Login from '../Pages/Login'
 import Singup from '../Pages/Singup'
+import User_information from '../Pages/User_information'
 export default class Header extends Component {
     render() {
         return (
@@ -24,6 +25,7 @@ export default class Header extends Component {
                             />
                             E-Store
                         </NavbarBrand>
+                        
                         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                         <Navbar.Collapse id='responcive-navbar-nav'>
                             <Nav className='me-auto'>
@@ -31,6 +33,7 @@ export default class Header extends Component {
                                 <Nav.Link href='/about'> About us </Nav.Link>
                                 <Nav.Link href='/contacts'> Contacts </Nav.Link>
                                 <Nav.Link href='/blog'> Blog </Nav.Link>
+                                <Nav.Link href='/user_information'> User Information </Nav.Link>
 
                             </Nav>
 
@@ -44,6 +47,7 @@ export default class Header extends Component {
 
                             </Form>
                             <Button className='btn-dark' href='/sing-in'>Sing in</Button>
+                            <Button className='btn-dark' href='/sing-up'>Sing up</Button>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
@@ -58,6 +62,8 @@ export default class Header extends Component {
                         <Route path='/contacts' element={<Contacts />} />
                         <Route path='/blog' element={<Blog />} />
                         <Route path='/sing-in' element={<Login />} />
+                        <Route path='/user_information' element={<User_information />} />
+                        <Route path='/sing-up' element={<Singup />} />
                     </Routes>
                 </Router>
 
